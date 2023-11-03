@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center; 
+    background-image: url("/static/background-3268840_1920.jpg");
+      
+
+}
+
+.weather-container {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 250px auto;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-data {
+    margin-top: 20px;
+}
+
+

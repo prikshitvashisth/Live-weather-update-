@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Weather</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Live Weather Update</h1>
+        <form method="POST" action="/weather">
+            <label for="city">Enter city name:</label>
+            <input type="text" name="city" id="city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div class="weather-data">
+            <p id="location">Location: {{ weather_data.location if weather_data else 'N/A' }}</p>
+            <p id="temperature">Temperature: {{ weather_data.temperature if weather_data else 'N/A' }}</p>
+            <p id="description">Description: {{ weather_data.description if weather_data else 'N/A' }}</p>
+        </div>
+    </div>
+    <h3>© Haseeb and Prikshit </h3>
+</body>
+</html>
