@@ -10,7 +10,7 @@ UNITS = "metric"  # Default units: Celsius
 @app.route('/')
 def index():
     return render_template('index.html')
-
+ 
 @app.route('/weather', methods=['POST'])
 def weather():
     city = request.form['city']
