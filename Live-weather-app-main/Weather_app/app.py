@@ -12,7 +12,7 @@ def index():
     return render_template('index.html')
  
 @app.route('/weather', methods=['POST'])
-def weather():
+def weather(): 
     city = request.form['city']
     
 
@@ -49,3 +49,4 @@ def fetch_weather_data(city):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
