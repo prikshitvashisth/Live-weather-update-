@@ -14,7 +14,7 @@ def index():
 @app.route('/weather', methods=['POST'])
 def weather(): 
     city = request.form['city']
-    
+      
 
     scale = request.form.get('scale', 'metric')
     
@@ -49,4 +49,5 @@ def fetch_weather_data(city):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
